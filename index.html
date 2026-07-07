@@ -76,12 +76,72 @@
     </section>
 
     <!-- Learning System -->
-    <section class="section">
-      <h2 class="section-title">모두매쓰에서<br><span class="accent">최적화된 학습 시스템</span>을 경험해 보세요</h2>
-      <div class="feature-tabs"><button class="pill active">문제 생성</button><button class="pill">문제 풀이</button><button class="pill">오답노트</button></div>
-      <div class="feature-showcase">
-        <div><h3>내 수준에 맞는 수학 문제<br><span class="accent">AI가 알아서 만들어줘요</span></h3><p class="muted">과목과 단원, 난이도를 선택하면<br>AI가 나에게 필요한 문제만 골라서 만들어줍니다.</p></div>
-        <div class="mock-generator"><div class="mock-inner"><b>문제 생성</b><p class="muted">원하는 난이도, 학년, 단원을 선택하세요</p><div class="chip-row"><span class="chip">쉬움</span><span class="chip">보통</span><span class="chip">어려움</span><span class="chip">초1</span><span class="chip">중1</span><span class="chip">고1</span><span class="chip">25개</span></div></div></div>
+    <section class="section learning-section" aria-labelledby="learning-title" data-learning-system>
+      <div class="learning-wave" aria-hidden="true">
+        <svg viewBox="0 0 1120 760" preserveAspectRatio="none">
+          <g class="learning-wave-bundle">
+            <path d="M-120 714 C150 540 382 690 548 442 C688 232 920 318 1240 54"/>
+            <path d="M-118 694 C142 532 376 671 549 440 C696 244 924 307 1236 70"/>
+            <path d="M-114 674 C136 524 370 652 550 438 C704 256 928 296 1232 86"/>
+            <path d="M-110 654 C132 516 364 633 551 436 C712 268 932 285 1228 102"/>
+            <path d="M-104 634 C130 508 358 614 552 434 C720 280 936 274 1224 118"/>
+            <path d="M-96 614 C130 500 352 595 553 432 C728 292 940 263 1220 134"/>
+            <path d="M-86 594 C134 492 348 576 554 430 C736 304 944 252 1216 150"/>
+            <path d="M-74 574 C140 484 344 557 555 428 C744 316 948 241 1212 166"/>
+            <path d="M-60 554 C148 476 342 538 556 426 C752 328 952 230 1208 182"/>
+            <path d="M-44 534 C158 468 340 519 557 424 C760 340 956 219 1204 198"/>
+            <path d="M-26 514 C170 460 340 500 558 422 C768 352 960 208 1200 214"/>
+            <path d="M-6 494 C184 452 342 481 559 420 C776 364 964 197 1196 230"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="learning-inner">
+        <h2 class="section-title learning-title" id="learning-title">모두매쓰에서<br><span>최적화된 학습 시스템</span>을 경험해 보세요</h2>
+
+        <div class="feature-tabs" role="tablist" aria-label="학습 시스템 기능">
+          <button class="pill active" type="button" role="tab" id="learning-tab-generate" aria-selected="true" aria-controls="learning-panel-generate" data-learning-tab="0">문제 생성</button>
+          <button class="pill" type="button" role="tab" id="learning-tab-print" aria-selected="false" aria-controls="learning-panel-print" tabindex="-1" data-learning-tab="1">문제 출력</button>
+          <button class="pill" type="button" role="tab" id="learning-tab-note" aria-selected="false" aria-controls="learning-panel-note" tabindex="-1" data-learning-tab="2">오답노트</button>
+        </div>
+
+        <div class="learning-panels" aria-live="polite">
+          <article class="feature-showcase learning-panel active" role="tabpanel" id="learning-panel-generate" aria-labelledby="learning-tab-generate" data-learning-panel="0">
+            <div class="learning-copy">
+              <h3>내 수준에 맞는 수학 문제<br><span>AI가 알아서 만들어줘요</span></h3>
+              <p>과목과 단원, 난이도를 선택하면<br>AI가 나에게 필요한 문제만 골라서 만들어줍니다.</p>
+            </div>
+            <div class="learning-demo-frame">
+              <div class="feature-demo-video-mask">
+                <video src="assets/videos/section2-generate.mp4" autoplay muted loop playsinline preload="auto" data-learning-video aria-hidden="true"></video>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-showcase learning-panel" role="tabpanel" id="learning-panel-print" aria-labelledby="learning-tab-print" data-learning-panel="1" hidden>
+            <div class="learning-copy">
+              <h3>생성된 문제<br><span>바로 실전처럼 풀어보세요</span></h3>
+              <p>완성된 문제를 PDF로 저장하거나 바로 출력해<br>실전처럼 풀고 결과까지 확인할 수 있습니다.</p>
+            </div>
+            <div class="learning-demo-frame">
+              <div class="feature-demo-video-mask">
+                <video src="assets/videos/section2-print.mp4" autoplay muted loop playsinline preload="auto" data-learning-video aria-hidden="true"></video>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-showcase learning-panel" role="tabpanel" id="learning-panel-note" aria-labelledby="learning-tab-note" data-learning-panel="2" hidden>
+            <div class="learning-copy">
+              <h3>오답 그냥 넘기지 마세요<br><span>오답이 쌓이면 실력이 됩니다</span></h3>
+              <p>틀린 문제와 해설을 한곳에 정리하고<br>AI가 추천하는 복습으로 약점을 채워보세요.</p>
+            </div>
+            <div class="learning-demo-frame">
+              <div class="feature-demo-video-mask">
+                <video src="assets/videos/section2-note.mp4" autoplay muted loop playsinline preload="auto" data-learning-video aria-hidden="true"></video>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
