@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>로그인 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-layout">
+  <!-- Common Header -->
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      <nav class="toplinks" aria-label="회원 메뉴"><a href="signup.html">회원가입</a><a href="login.html" aria-current="page">로그인</a></nav>
+    </div>
+  </header>
+
+  <main class="auth-page login-page">
+    <!-- Login Card -->
+    <section class="auth-card">
+      <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      <h1 class="auth-title">모두매쓰 계정으로 간편 로그인</h1>
+
+      <!-- Social Login -->
+      <div class="social"><button type="button">🌈　Google 계정으로 로그인하기</button><button type="button">🟩　Naver 계정으로 로그인하기</button></div>
+      <div class="divider">이메일로 로그인</div>
+
+      <!-- Email Login Form -->
+      <form data-auth-form>
+        <div class="input-group"><label for="login-email">이메일</label><input id="login-email" name="email" type="email" placeholder="이메일" autocomplete="email" required></div>
+        <div class="input-group"><label for="login-password">비밀번호</label><input id="login-password" name="password" type="password" placeholder="비밀번호" autocomplete="current-password" required minlength="4"></div>
+        <button class="btn btn-primary auth-submit" type="submit">로그인</button>
+      </form>
+
+      <!-- Account Link -->
+      <p class="auth-switch">계정이 없으신가요? <a class="accent" href="signup.html">회원가입</a></p>
+    </section>
+  </main>
+  <script src="js/common.js"></script>
+</body>
+</html>

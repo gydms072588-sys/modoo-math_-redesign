@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>홈 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Mobile Navigation Backdrop -->
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head">
+        <button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button>
+        <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      </div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn active" href="home.html" aria-current="page"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html">
+        <span class="avatar">K</span>
+        <span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span>
+      </a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head">
+      <button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button>
+      <span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span>
+    </header>
+
+    <main class="page dashboard-page">
+      <div class="page-inner">
+        <!-- Welcome Summary -->
+        <section class="dashboard-summary">
+          <h1 class="welcome">김모두님, 환영합니다!</h1>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <b>이번 달 문제 생성을<br>한 번도 하지 않았어요!</b>
+              <div class="card-action"><a class="btn btn-primary" href="generate.html">문제 생성하기</a></div>
+            </article>
+            <article class="summary-card">
+              <b>내가 이용 중인 이용권</b>
+              <small>이용 기간: 2026.04.02 ~ 2026.04.08</small>
+              <div class="card-action"><span class="accent"><b>문제 생성 무제한 패키지 👑</b></span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Quick Learning Menu -->
+        <section class="history">
+          <h2>바로가기</h2>
+          <div class="history-grid">
+            <a class="history-card" href="solve.html"><h3>문제 풀이</h3><small>생성한 문제를 이어서 풀어보세요.</small></a>
+            <a class="history-card" href="wrong.html"><h3>오답노트</h3><small>틀린 문제와 해설을 확인하세요.</small></a>
+            <a class="history-card" href="board.html"><h3>학습 보드</h3><small>최근 학습 콘텐츠를 모아보세요.</small></a>
+          </div>
+        </section>
+
+        <!-- Recent Learning History -->
+        <section class="history">
+          <h2>최근 생성 이력</h2>
+          <div class="history-grid">
+            <article class="history-card"><h3>소인수분해 <span class="accent">문제 생성</span></h3><small>생성 날짜: 2026.02.01</small></article>
+            <article class="history-card"><h3>소인수분해 <span class="accent">AI 오답노트</span></h3><small>생성 날짜: 2026.02.01</small></article>
+            <article class="history-card"><h3>정수와 유리수 <span class="accent">문제 풀이</span></h3><small>학습 날짜: 2026.02.01</small></article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

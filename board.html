@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>학습 보드 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head">
+        <button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button>
+        <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      </div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn active" href="board.html" aria-current="page"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head">
+      <button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button>
+      <span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span>
+    </header>
+
+    <main class="page board-page">
+      <div class="page-inner">
+        <!-- Board Header -->
+        <header class="page-section-head">
+          <div><h1 class="page-title page-title-left">학습 보드</h1><p class="muted">학습 자료와 공부 방법을 함께 나누는 공간입니다.</p></div>
+          <button class="btn btn-primary" type="button">글쓰기</button>
+        </header>
+
+        <!-- Category and Search -->
+        <section class="board-controls" aria-label="게시글 필터">
+          <nav class="board-tabs" aria-label="게시글 카테고리">
+            <button class="board-tab active" data-tab>전체</button>
+            <button class="board-tab" data-tab>학습 질문</button>
+            <button class="board-tab" data-tab>문제 풀이</button>
+            <button class="board-tab" data-tab>공부 방법</button>
+            <button class="board-tab" data-tab>공지</button>
+          </nav>
+          <form class="board-search" role="search">
+            <label class="visually-hidden" for="board-keyword">게시글 검색</label>
+            <input id="board-keyword" type="search" placeholder="제목이나 내용을 검색하세요">
+            <button class="btn btn-soft" type="submit">검색</button>
+          </form>
+        </section>
+
+        <!-- Post List -->
+        <section class="content-list" aria-label="게시글 목록">
+          <article class="content-card post-card"><span class="post-category accent">학습 질문</span><h2>소인수분해 문제를 빠르게 푸는 방법이 궁금해요</h2><p class="muted">인수분해 순서를 어떻게 잡으면 좋은지 알려주세요.</p><small>김모두 · 2026.02.01 · 조회 24</small></article>
+          <article class="content-card post-card"><span class="post-category accent">문제 풀이</span><h2>정수와 유리수 오답 풀이를 공유합니다</h2><p class="muted">부호 계산에서 자주 틀리는 부분을 정리했습니다.</p><small>수학선생님 · 2026.01.30 · 조회 48</small></article>
+          <article class="content-card post-card"><span class="post-category accent">공부 방법</span><h2>매일 20분 오답노트 활용 루틴</h2><p class="muted">문제를 다시 풀고 취약 개념을 점검하는 순서입니다.</p><small>한소은 · 2026.01.28 · 조회 63</small></article>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>문제 생성 완료 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head"><button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn active" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head"><button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button><span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span></header>
+
+    <main class="page complete-page">
+      <div class="page-inner">
+        <!-- Completion Message -->
+        <header class="completion-head">
+          <h1 class="page-title page-title-compact">문제 생성이 완료되었습니다!</h1>
+          <p class="muted">선택한 조건으로 총 25개의 문제가 준비되었습니다.</p>
+        </header>
+
+        <!-- Generated Set Summary -->
+        <section class="summary-grid generation-summary" aria-label="생성된 문제 요약">
+          <article class="summary-card"><b>학습 범위</b><p>중학교 1학년 · 수학<br><span class="accent">소인수분해</span></p></article>
+          <article class="summary-card"><b>문제 구성</b><p>난이도 보통 · 객관식 중심<br><span class="accent">총 25문제</span></p></article>
+        </section>
+
+        <!-- Problem Preview -->
+        <section class="problem-panel problem-preview">
+          <div class="problem">
+            <b class="problem-number">1</b>
+            <div><div class="problem-text">소인수분해에 대하여 옳은 것을 고르시오.</div><div class="answers"><span class="answer"><span class="circle">1</span>250 이하의 소수는 9개이다.</span><span class="answer"><span class="circle">2</span>소수는 모두 홀수이다.</span><span class="answer"><span class="circle">3</span>가장 작은 소수는 2이다.</span></div></div>
+          </div>
+        </section>
+
+        <!-- Completion Actions -->
+        <div class="completion-actions completion-actions-bottom">
+          <a class="btn btn-soft" href="generate.html">다시 생성하기</a>
+          <button class="btn btn-soft" type="button" onclick="window.print()">문제 출력</button>
+          <a class="btn btn-primary" href="solve.html">문제 풀러가기</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

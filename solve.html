@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>문제 풀기 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head"><button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn active" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head"><button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button><span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span></header>
+
+    <main class="page solve-page">
+      <div class="page-inner">
+        <!-- Solve Header -->
+        <header class="solve-head">
+          <div><h1 class="page-title page-title-left">문제 풀기</h1><p class="muted">중학교 1학년 · 소인수분해 · 난이도 보통</p></div>
+          <div class="timer">진행 시간: <span id="timer">00:01</span></div>
+        </header>
+
+        <!-- Problem Progress -->
+        <section class="problem-progress" aria-label="문제 진행 상황">
+          <span><b>1</b> / 25</span>
+          <div class="progress-track"><span style="width:4%"></span></div>
+        </section>
+
+        <!-- Current Problem -->
+        <section class="problem-panel">
+          <div class="problem">
+            <b class="problem-number">1</b>
+            <div>
+              <div class="problem-text">소인수분해에 대하여 옳은 것 (또는 옳지 않은 것)을 고르시오.<br>다음 설명 중 옳은 것은?</div>
+              <div class="answers">
+                <button class="answer" data-answer><span class="circle">1</span>250 이하의 소수는 9개이다.</button>
+                <button class="answer" data-answer><span class="circle">2</span>소수는 모두 홀수이다.</button>
+                <button class="answer" data-answer><span class="circle">3</span>모든 소수는 약수의 개수가 1개이다.</button>
+                <button class="answer" data-answer><span class="circle">4</span>가장 작은 소수는 1이다.</button>
+                <button class="answer" data-answer><span class="circle">5</span>한 자리의 소수는 4개이다.</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solve Actions -->
+        <nav class="solve-actions" aria-label="문제 이동">
+          <button class="btn btn-soft" type="button" disabled>이전 문제</button>
+          <button class="btn btn-soft" type="button">다음 문제</button>
+          <a class="btn btn-primary" href="wrong.html">답안 제출</a>
+        </nav>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

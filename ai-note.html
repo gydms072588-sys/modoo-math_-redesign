@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AI 오답노트 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head"><button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn active" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head"><button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button><span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span></header>
+
+    <main class="page ai-note-page">
+      <div class="page-inner">
+        <!-- AI Analysis Header -->
+        <header class="form-intro ai-note-head">
+          <h1 class="page-title page-title-compact">AI 오답 분석</h1>
+          <p class="muted">최근 풀이 결과를 바탕으로 취약 개념과 추천 학습 방향을 분석했습니다.</p>
+        </header>
+
+        <!-- AI Analysis Result -->
+        <section class="analysis-hero">
+          <span class="analysis-icon" aria-hidden="true">✦</span>
+          <div><h2>소수의 성질과 약수 개념을 다시 확인해 보세요</h2><p>문제 계산보다 개념을 구분하는 문항에서 오답이 많이 발생했습니다.</p></div>
+        </section>
+
+        <!-- Weak Concepts -->
+        <section class="analysis-section">
+          <h2>취약 개념</h2>
+          <div class="summary-grid">
+            <article class="summary-card"><span class="analysis-label">취약도 높음</span><h3>소수와 합성수</h3><p class="muted">2가 유일한 짝수 소수라는 성질을 혼동하고 있습니다.</p></article>
+            <article class="summary-card"><span class="analysis-label">복습 필요</span><h3>약수의 개수</h3><p class="muted">소수는 1과 자기 자신, 총 2개의 약수를 가집니다.</p></article>
+          </div>
+        </section>
+
+        <!-- Recommended Learning Direction -->
+        <section class="analysis-section recommendation-card">
+          <h2>추천 학습 방향</h2>
+          <ol class="recommendation-list"><li>한 자리 소수를 직접 나열하며 소수의 정의를 복습하세요.</li><li>소수와 합성수를 구분하는 기본 문제 5개를 먼저 풀어보세요.</li><li>틀린 문제를 하루 뒤 다시 풀어 개념이 정착됐는지 확인하세요.</li></ol>
+        </section>
+
+        <!-- AI Note Actions -->
+        <nav class="solve-actions" aria-label="AI 오답 분석 이동">
+          <a class="btn btn-soft" href="home.html">홈으로</a>
+          <a class="btn btn-primary" href="solve.html">취약 문제 다시 풀기</a>
+        </nav>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

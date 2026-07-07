@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>문제 생성 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head">
+        <button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button>
+        <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      </div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn active" href="generate.html" aria-current="page"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head">
+      <button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button>
+      <span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span>
+    </header>
+
+    <main class="page generate-page">
+      <div class="page-inner">
+        <!-- Page Introduction -->
+        <header class="form-intro">
+          <h1 class="page-title page-title-compact">문제 생성</h1>
+          <p class="muted">원하는 학년, 과목, 단원, 난이도와 문제 수를 선택하여<br>나만의 맞춤형 수학 문제를 생성할 수 있습니다.</p>
+        </header>
+
+        <!-- Problem Generation Form -->
+        <form action="complete.html">
+          <section class="form-panel">
+            <!-- Difficulty -->
+            <fieldset class="field option-field">
+              <legend class="field-label">난이도</legend>
+              <div class="options"><button class="option" type="button">쉬움</button><button class="option selected" type="button">✓ 보통</button><button class="option" type="button">어려움</button></div>
+            </fieldset>
+
+            <!-- Grade -->
+            <fieldset class="field option-field">
+              <legend class="field-label">학년</legend>
+              <div class="options"><button class="option" type="button">초1</button><button class="option" type="button">초2</button><button class="option" type="button">초3</button><button class="option" type="button">초4</button><button class="option" type="button">초5</button><button class="option" type="button">초6</button><button class="option selected" type="button">✓ 중1</button><button class="option" type="button">중2</button><button class="option" type="button">중3</button><button class="option" type="button">고1</button><button class="option" type="button">고2</button><button class="option" type="button">고3</button></div>
+            </fieldset>
+
+            <!-- Subject, Unit and Count -->
+            <div class="form-select-grid">
+              <label class="select-field">과목<select name="subject"><option>수학</option></select></label>
+              <label class="select-field">단원<select name="unit"><option>소인수분해</option><option>정수와 유리수</option></select></label>
+              <label class="select-field">문제 수<select name="count"><option>10개</option><option selected>25개</option><option>50개</option></select></label>
+            </div>
+          </section>
+          <div class="center-action"><button class="btn btn-primary" type="submit">생성하기</button></div>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>

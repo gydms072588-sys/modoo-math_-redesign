@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>회원가입 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-layout">
+  <!-- Common Header -->
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      <nav class="toplinks" aria-label="회원 메뉴"><a href="signup.html" aria-current="page">회원가입</a><a href="login.html">로그인</a></nav>
+    </div>
+  </header>
+
+  <main class="auth-page signup-page">
+    <!-- Signup Card -->
+    <section class="auth-card">
+      <a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a>
+      <h1 class="auth-title">모두매쓰 계정을 만들어 보세요</h1>
+
+      <!-- Social Signup -->
+      <div class="social"><button type="button">🌈　Google 계정으로 회원가입</button><button type="button">🟩　Naver 계정으로 회원가입</button></div>
+      <div class="divider">이메일로 가입</div>
+
+      <!-- Email Signup Form -->
+      <form data-auth-form>
+        <div class="input-group"><label for="signup-name">이름</label><input id="signup-name" name="name" type="text" placeholder="이름" autocomplete="name" required></div>
+        <div class="input-group"><label for="signup-email">이메일</label><input id="signup-email" name="email" type="email" placeholder="이메일" autocomplete="email" required></div>
+        <div class="input-group"><label for="signup-password">비밀번호</label><input id="signup-password" name="password" type="password" placeholder="비밀번호" autocomplete="new-password" required minlength="4"></div>
+        <button class="btn btn-primary auth-submit" type="submit">회원가입</button>
+      </form>
+
+      <!-- Account Link -->
+      <p class="auth-switch">이미 계정이 있으신가요? <a class="accent" href="login.html">로그인</a></p>
+    </section>
+  </main>
+  <script src="js/common.js"></script>
+</body>
+</html>

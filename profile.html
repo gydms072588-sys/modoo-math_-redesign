@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>프로필 | 모두매쓰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="drawer-backdrop" data-close></div>
+
+    <!-- Common Sidebar -->
+    <aside class="sidebar">
+      <div class="side-head"><button class="menu-toggle" data-close aria-label="메뉴 닫기">☰</button><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></div>
+      <nav class="side-nav" aria-label="주요 메뉴">
+        <a class="nav-btn" href="home.html"><span class="nav-icon">⌂</span>홈</a>
+        <a class="nav-btn" href="board.html"><span class="nav-icon">□</span>학습 보드</a>
+        <a class="nav-btn" href="generate.html"><span class="nav-icon">✣</span>문제 생성</a>
+        <a class="nav-btn" href="faq.html"><span class="nav-icon">♧</span>FAQ</a>
+      </nav>
+      <a class="side-user" href="profile.html" aria-current="page"><span class="avatar">K</span><span><b class="badge">무료 체험 이용 중</b><br><small>〉 프로필 및 업그레이드</small></span></a>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-head"><button class="menu-toggle" data-menu aria-label="메뉴 열기">☰</button><span class="mobile-logo"><a class="brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="모두매쓰"></a></span></header>
+
+    <main class="page profile-page">
+      <div class="page-inner">
+        <!-- Profile Summary -->
+        <section class="profile-summary-card">
+          <div class="profile-head"><div class="profile-photo" aria-hidden="true">👩🏻</div><div><h1>김채연</h1><p class="muted">kimmodoo@example.com · 2026년 4월 가입</p></div></div>
+          <a class="btn btn-soft" href="#settings">정보 수정</a>
+        </section>
+
+        <!-- Learning Stats -->
+        <section class="profile-section">
+          <h2>학습 통계</h2>
+          <div class="profile-stats">
+            <article class="stat-card"><strong>128</strong><span>푼 문제</span></article>
+            <article class="stat-card"><strong>82%</strong><span>평균 정답률</span></article>
+            <article class="stat-card"><strong>12일</strong><span>연속 학습</span></article>
+          </div>
+        </section>
+
+        <!-- Current Plan -->
+        <section class="plan-card">
+          <h2 class="plan-title">무료 회원</h2>
+          <div class="plan-body">지금은 무료 학습 중이에요.<br><b>프리미엄으로 업그레이드하고 무제한으로 풀어보세요.</b><button class="btn btn-primary" type="button">프리미엄으로 업그레이드하기</button></div>
+        </section>
+
+        <!-- Recent Learning History -->
+        <section class="profile-section">
+          <h2>최근 학습 기록</h2>
+          <div class="content-list">
+            <article class="content-card recent-record"><div><h3>소인수분해 문제 풀이</h3><small>2026.04.06 · 25문제</small></div><strong class="accent">정답률 84%</strong></article>
+            <article class="content-card recent-record"><div><h3>정수와 유리수 오답 복습</h3><small>2026.04.04 · 10문제</small></div><strong class="accent">정답률 70%</strong></article>
+          </div>
+        </section>
+
+        <!-- Account Settings -->
+        <section class="settings" id="settings">
+          <h2>설정</h2>
+          <div class="settings-title">계정 및 보안 설정</div><div class="setting-row">개인 정보 편집<span>〉</span></div><div class="setting-row">접근 권한 관리<span>〉</span></div>
+          <div class="settings-title">학습 환경 설정</div><div class="setting-row">문제 풀이 설정<span>〉</span></div><div class="setting-row">문제 출력 설정<span>〉</span></div>
+          <div class="settings-title">알림 설정</div><div class="setting-row">이메일 알림 수신<span>〉</span></div>
+          <a class="btn logout" href="index.html">로그아웃</a>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+</body>
+</html>
