@@ -221,3 +221,16 @@ document.querySelectorAll('[data-section-3]').forEach((section) => {
   reducedMotion.addEventListener('change', observeBlocks);
   observeBlocks();
 });
+
+document.querySelectorAll('[data-review-carousel]').forEach((carousel) => {
+  const track = carousel.querySelector('.review-track');
+  const reviewSet = track?.querySelector('.review-set');
+  if (!track || !reviewSet || track.children.length > 1) return;
+
+  const duplicateSet = reviewSet.cloneNode(true);
+  duplicateSet.setAttribute('aria-hidden', 'true');
+  duplicateSet.querySelectorAll('img').forEach((image) => image.setAttribute('alt', ''));
+  track.appendChild(duplicateSet);
+
+  requestAnimationFrame(() => track.classList.add('is-ready'));
+});
