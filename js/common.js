@@ -192,3 +192,32 @@ document.querySelectorAll('[data-learning-system]').forEach((section) => {
   syncPanelVideos(true);
   startAutoplay();
 });
+
+document.querySelectorAll('[data-section-3]').forEach((section) => {
+  const blocks = [...section.querySelectorAll('[data-section-3-block]')];
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let observer;
+
+  const revealAll = () => blocks.forEach((block) => block.classList.add('is-visible'));
+
+  const observeBlocks = () => {
+    observer?.disconnect();
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealAll();
+      return;
+    }
+
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.24, rootMargin: '0px 0px -8% 0px' });
+
+    blocks.forEach((block) => observer.observe(block));
+  };
+
+  reducedMotion.addEventListener('change', observeBlocks);
+  observeBlocks();
+});
